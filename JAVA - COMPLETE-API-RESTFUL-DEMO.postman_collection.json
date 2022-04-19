@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "caa88d41-db6a-463a-b11a-94c24b9c6d87",
+		"name": "JAVA - COMPLETE-API-RESTFUL-DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindOne",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGFmOTg1NDNjNDg3YWY2Y2ViMjMwY2FlMDAyYzkyZmQ6ODk3OTRiNjIxYTMxM2JiNTllZWQwZDlmMGY0ZTgyMDU=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:31701/huntercodexs/completeapirestfuldemo/api/users/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31701",
+					"path": [
+						"huntercodexs",
+						"completeapirestfuldemo",
+						"api",
+						"users",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGFmOTg1NDNjNDg3YWY2Y2ViMjMwY2FlMDAyYzkyZmQ6ODk3OTRiNjIxYTMxM2JiNTllZWQwZDlmMGY0ZTgyMDU=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:31701/huntercodexs/completeapirestfuldemo/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31701",
+					"path": [
+						"huntercodexs",
+						"completeapirestfuldemo",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGFmOTg1NDNjNDg3YWY2Y2ViMjMwY2FlMDAyYzkyZmQ6ODk3OTRiNjIxYTMxM2JiNTllZWQwZDlmMGY0ZTgyMDU=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Carlos Pereira\",\n    \"email\": \"carlos@email.com\",\n    \"phone\": \"1111111111111\",\n    \"address\": \"Rua do Carlos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:31701/huntercodexs/completeapirestfuldemo/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31701",
+					"path": [
+						"huntercodexs",
+						"completeapirestfuldemo",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGFmOTg1NDNjNDg3YWY2Y2ViMjMwY2FlMDAyYzkyZmQ6ODk3OTRiNjIxYTMxM2JiNTllZWQwZDlmMGY0ZTgyMDU=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:31701/huntercodexs/completeapirestfuldemo/api/users/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31701",
+					"path": [
+						"huntercodexs",
+						"completeapirestfuldemo",
+						"api",
+						"users",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGFmOTg1NDNjNDg3YWY2Y2ViMjMwY2FlMDAyYzkyZmQ6ODk3OTRiNjIxYTMxM2JiNTllZWQwZDlmMGY0ZTgyMDU=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Carlos Pereira\",\n    \"email\": \"carlos@email.com\",\n    \"phone\": \"2222222222222\",\n    \"address\": \"Rua do Carlos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:31701/huntercodexs/completeapirestfuldemo/api/users/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31701",
+					"path": [
+						"huntercodexs",
+						"completeapirestfuldemo",
+						"api",
+						"users",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patcher",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZGFmOTg1NDNjNDg3YWY2Y2ViMjMwY2FlMDAyYzkyZmQ6ODk3OTRiNjIxYTMxM2JiNTllZWQwZDlmMGY0ZTgyMDU=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\": \"Rua do Carlos Pereira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:31701/huntercodexs/completeapirestfuldemo/api/users/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31701",
+					"path": [
+						"huntercodexs",
+						"completeapirestfuldemo",
+						"api",
+						"users",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
